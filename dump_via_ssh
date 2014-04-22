@@ -1,3 +1,24 @@
 #! /bin/bash
-echo start tcpdump on "$1" via ssh ...
-ssh root@"$1" tcpdump -i wlan0 -U -s 0 -w - 'not port 22' | wireshark -k -i -
+
+interface_name="wlan0"
+
+while getopts "i:" arg
+do
+    case $arg in
+        i)
+            echo "interface:$OPTARG"
+            interface_name=$OPTARG
+            ;;
+        ?)
+            echo "unknow argument"
+            exit 1
+            ;;
+    esac
+done
+
+shift $(($OPTIND - 1))
+
+ip_addr=$1
+
+echo start tcpdump on $ip_addr via ssh ...
+ssh root@$ip_addr tcpdump -i $interface_name -U -s 0 -w - 'not port 22' | wireshark -k -i -
