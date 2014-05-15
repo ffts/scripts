@@ -24,3 +24,7 @@
 ip_addr就是手机的ip地址    
 运行后第一次应该会问是否链接，输入yes就行，就是ssh第一次连接的时候都会问的那个，然后输入密码，现在用的是root用户，以后再加上用户密码的参数吧，不过感觉手机上一般也就用root用户    
 没什么问题的话wireshark就会起来了    
+===   
+####load\_modules\_for\_genymotion   
+加载运行genymotion模拟器需要的模块   
+

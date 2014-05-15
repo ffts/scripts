@@ -1,0 +1,5 @@
+#! /bin/bash
+modprobe vboxdrv
+modprobe vboxnetflt
+modprobe vboxnetadp
+modprobe vboxpci
