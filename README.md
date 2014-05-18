@@ -34,3 +34,7 @@ ip_addr就是手机的ip地址
 ####load\_modules\_for\_genymotion   
 加载运行genymotion模拟器需要的模块   
 
+===
+
+####update\_mirrors   
+使用reflector替换5个速度最换的更新镜像   
