@@ -37,4 +37,4 @@ ip_addr就是手机的ip地址
 ===
 
 ####update\_mirrors   
-使用reflector替换5个速度最换的更新镜像   
+使用reflector替换5个速度最快的更新镜像   
