@@ -1,0 +1,4 @@
+#! /bin/bash
+#change dimension from iso 640p px to android 720p dp
+ori=$1
+echo "scale=4; $1*1.125/2" | bc
