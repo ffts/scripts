@@ -38,3 +38,9 @@ ip_addr就是手机的ip地址
 
 ####update\_mirrors   
 使用reflector替换5个速度最快的更新镜像   
+
+===
+
+####640to720
+因为一些设计总是先在640下的iPhone屏幕下设计，用这个把640p下单位为px的尺寸转成android下720p的单位是dp的尺寸   
+
